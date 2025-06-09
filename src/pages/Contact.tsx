@@ -73,8 +73,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "info@canz.com",
-      link: "mailto:info@canz.com",
+      value: "Amir.Mirmehrkar.de@gmail.com",
+      link: "mailto:Amir.Mirmehrkar.de@gmail.com",
       description: "General inquiries and support"
     },
     {

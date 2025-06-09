@@ -7,6 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import Adtech from "./pages/services/Adtech";
+import DigitalDevelopment from "./pages/services/DigitalDevelopment";
+import Fintech from "./pages/services/Fintech";
+import Investment from "./pages/services/Investment";
+import Marketing from "./pages/services/Marketing";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,10 +27,16 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Service routes will be added in the next iteration */}
-          <Route path="/services/*" element={<Index />} />
-          <Route path="/blog" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/blog" element={<Blog />} />
+          
+          {/* Service routes */}
+          <Route path="/services/adtech" element={<Adtech />} />
+          <Route path="/services/digital-development" element={<DigitalDevelopment />} />
+          <Route path="/services/fintech" element={<Fintech />} />
+          <Route path="/services/investment" element={<Investment />} />
+          <Route path="/services/marketing" element={<Marketing />} />
+          
+          {/* Catch-all route for 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
