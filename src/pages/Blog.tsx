@@ -129,49 +129,50 @@ const Blog = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {featuredPosts.map((post, index) => (
-              <Card 
-                key={post.id}
-                className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/90 backdrop-blur-sm border-0 hover-glow overflow-hidden animate-fade-in"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
-                <div className="aspect-video overflow-hidden">
-                  <img 
-                    src={post.image} 
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <Badge variant="secondary" className="bg-gradient-canz-light text-primary">
-                      {post.category}
-                    </Badge>
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Clock className="w-4 h-4 mr-1" />
-                      {post.readTime}
-                    </div>
+              <Link key={post.id} to={`/blog/${post.id}`}>
+                <Card 
+                  className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/90 backdrop-blur-sm border-0 hover-glow overflow-hidden animate-fade-in cursor-pointer"
+                  style={{ animationDelay: `${index * 200}ms` }}
+                >
+                  <div className="aspect-video overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
                   </div>
-                  
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-gradient transition-colors duration-300 line-clamp-2">
-                    {post.title}
-                  </h3>
-                  
-                  <p className="text-gray-600 mb-4 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Calendar className="w-4 h-4 mr-1" />
-                      {post.date}
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <Badge variant="secondary" className="bg-gradient-canz-light text-primary">
+                        {post.category}
+                      </Badge>
+                      <div className="flex items-center text-sm text-gray-500">
+                        <Clock className="w-4 h-4 mr-1" />
+                        {post.readTime}
+                      </div>
                     </div>
-                    <Button variant="ghost" size="sm" className="p-0 h-auto">
-                      Read More
-                      <ArrowRight className="ml-1 w-4 h-4" />
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                    
+                    <h3 className="text-xl font-bold mb-3 group-hover:text-gradient transition-colors duration-300 line-clamp-2">
+                      {post.title}
+                    </h3>
+                    
+                    <p className="text-gray-600 mb-4 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center text-sm text-gray-500">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        {post.date}
+                      </div>
+                      <Button variant="ghost" size="sm" className="p-0 h-auto">
+                        Read More
+                        <ArrowRight className="ml-1 w-4 h-4" />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
@@ -188,39 +189,40 @@ const Blog = () => {
               
               <div className="space-y-8">
                 {recentPosts.map((post, index) => (
-                  <Card 
-                    key={post.id}
-                    className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90 backdrop-blur-sm border-0 animate-fade-in"
-                    style={{ animationDelay: `${index * 150}ms` }}
-                  >
-                    <CardContent className="p-6">
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-4 mb-3">
-                            <Badge variant="secondary" className="bg-gradient-canz-light text-primary">
-                              {post.category}
-                            </Badge>
-                            <div className="flex items-center text-sm text-gray-500">
-                              <Clock className="w-4 h-4 mr-1" />
-                              {post.readTime}
+                  <Link key={post.id} to={`/blog/${post.id}`}>
+                    <Card 
+                      className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-white/90 backdrop-blur-sm border-0 animate-fade-in cursor-pointer"
+                      style={{ animationDelay: `${index * 150}ms` }}
+                    >
+                      <CardContent className="p-6">
+                        <div className="flex items-start justify-between">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-4 mb-3">
+                              <Badge variant="secondary" className="bg-gradient-canz-light text-primary">
+                                {post.category}
+                              </Badge>
+                              <div className="flex items-center text-sm text-gray-500">
+                                <Clock className="w-4 h-4 mr-1" />
+                                {post.readTime}
+                              </div>
+                              <div className="flex items-center text-sm text-gray-500">
+                                <Calendar className="w-4 h-4 mr-1" />
+                                {post.date}
+                              </div>
                             </div>
-                            <div className="flex items-center text-sm text-gray-500">
-                              <Calendar className="w-4 h-4 mr-1" />
-                              {post.date}
-                            </div>
+                            
+                            <h3 className="text-xl font-bold group-hover:text-gradient transition-colors duration-300 mb-2">
+                              {post.title}
+                            </h3>
                           </div>
                           
-                          <h3 className="text-xl font-bold group-hover:text-gradient transition-colors duration-300 mb-2">
-                            {post.title}
-                          </h3>
+                          <Button variant="ghost" size="sm" className="ml-4">
+                            <ArrowRight className="w-4 h-4" />
+                          </Button>
                         </div>
-                        
-                        <Button variant="ghost" size="sm" className="ml-4">
-                          <ArrowRight className="w-4 h-4" />
-                        </Button>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </Link>
                 ))}
               </div>
               
