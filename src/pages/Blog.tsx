@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,11 +16,11 @@ import { Link } from "react-router-dom";
 
 const Blog = () => {
   const categories = [
-    { name: "Fintech", icon: DollarSign, count: 12, color: "bg-green-100 text-green-800" },
-    { name: "Technology", icon: Smartphone, count: 18, color: "bg-blue-100 text-blue-800" },
-    { name: "Marketing", icon: Megaphone, count: 15, color: "bg-purple-100 text-purple-800" },
-    { name: "Investment", icon: TrendingUp, count: 9, color: "bg-orange-100 text-orange-800" },
-    { name: "Adtech", icon: Zap, count: 7, color: "bg-pink-100 text-pink-800" }
+    { name: "Fintech", icon: DollarSign, count: 12, color: "bg-green-100 text-green-800", slug: "fintech" },
+    { name: "Technology", icon: Smartphone, count: 18, color: "bg-blue-100 text-blue-800", slug: "technology" },
+    { name: "Marketing", icon: Megaphone, count: 15, color: "bg-purple-100 text-purple-800", slug: "marketing" },
+    { name: "Investment", icon: TrendingUp, count: 9, color: "bg-orange-100 text-orange-800", slug: "investment" },
+    { name: "Adtech", icon: Zap, count: 7, color: "bg-pink-100 text-pink-800", slug: "adtech" }
   ];
 
   const featuredPosts = [
@@ -103,18 +102,19 @@ const Blog = () => {
             </p>
           </div>
           
-          {/* Categories */}
+          {/* Categories - Now clickable */}
           <div className="flex flex-wrap justify-center gap-4 mb-16">
             {categories.map((category, index) => (
-              <Badge
-                key={category.name}
-                variant="secondary"
-                className={`${category.color} px-6 py-3 text-sm font-medium cursor-pointer hover:opacity-80 transition-opacity animate-fade-in`}
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <category.icon className="w-4 h-4 mr-2" />
-                {category.name} ({category.count})
-              </Badge>
+              <Link key={category.name} to={`/blog/category/${category.slug}`}>
+                <Badge
+                  variant="secondary"
+                  className={`${category.color} px-6 py-3 text-sm font-medium cursor-pointer hover:opacity-80 transition-all duration-300 hover:scale-105 animate-fade-in`}
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <category.icon className="w-4 h-4 mr-2" />
+                  {category.name} ({category.count})
+                </Badge>
+              </Link>
             ))}
           </div>
         </div>
@@ -263,13 +263,15 @@ const Blog = () => {
                   <h3 className="text-xl font-bold mb-6">Popular Categories</h3>
                   <div className="space-y-3">
                     {categories.map((category) => (
-                      <div key={category.name} className="flex items-center justify-between p-3 rounded-lg hover:bg-gradient-secondary transition-colors cursor-pointer">
-                        <div className="flex items-center">
-                          <category.icon className="w-5 h-5 mr-3 text-primary" />
-                          <span className="font-medium">{category.name}</span>
+                      <Link key={category.name} to={`/blog/category/${category.slug}`}>
+                        <div className="flex items-center justify-between p-3 rounded-lg hover:bg-gradient-secondary transition-colors cursor-pointer">
+                          <div className="flex items-center">
+                            <category.icon className="w-5 h-5 mr-3 text-primary" />
+                            <span className="font-medium">{category.name}</span>
+                          </div>
+                          <Badge variant="secondary">{category.count}</Badge>
                         </div>
-                        <Badge variant="secondary">{category.count}</Badge>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </CardContent>

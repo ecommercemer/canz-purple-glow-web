@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import BlogCategory from "./pages/BlogCategory";
 import Adtech from "./pages/services/Adtech";
 import DigitalDevelopment from "./pages/services/DigitalDevelopment";
 import Fintech from "./pages/services/Fintech";
@@ -30,6 +30,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/blog/category/:category" element={<BlogCategory />} />
           
           {/* Service routes */}
           <Route path="/services/adtech" element={<Adtech />} />

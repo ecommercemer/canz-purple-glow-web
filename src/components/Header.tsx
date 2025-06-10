@@ -1,6 +1,8 @@
 
 import { Link } from "react-router-dom";
-import { LoginDialog } from "./LoginDialog";
+import { AuthDialog } from "./AuthDialog";
+import { Button } from "@/components/ui/button";
+import { LogIn, UserPlus } from "lucide-react";
 
 export function Header() {
   return (
@@ -9,7 +11,26 @@ export function Header() {
         <Link to="/" className="text-2xl font-bold text-gradient">
           canz
         </Link>
-        <LoginDialog />
+        <div className="flex items-center gap-4">
+          <AuthDialog
+            mode="signup"
+            trigger={
+              <Button variant="outline" className="border-2 border-purple-400 hover:bg-gradient-secondary transition-all duration-300">
+                <UserPlus className="w-4 h-4 mr-2" />
+                Sign Up
+              </Button>
+            }
+          />
+          <AuthDialog
+            mode="login"
+            trigger={
+              <Button variant="outline" className="border-2 border-purple-400 hover:bg-gradient-secondary transition-all duration-300">
+                <LogIn className="w-4 h-4 mr-2" />
+                Login
+              </Button>
+            }
+          />
+        </div>
       </div>
     </header>
   );
