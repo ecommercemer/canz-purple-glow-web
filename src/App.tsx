@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Adtech from "./pages/services/Adtech";
 import DigitalDevelopment from "./pages/services/DigitalDevelopment";
 import Fintech from "./pages/services/Fintech";
