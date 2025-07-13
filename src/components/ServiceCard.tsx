@@ -13,7 +13,7 @@ interface ServiceCardProps {
 export function ServiceCard({ title, description, icon: Icon, features, delay = 0 }: ServiceCardProps) {
   return (
     <Card 
-      className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/90 backdrop-blur-sm border-0 hover-glow overflow-hidden animate-fade-in"
+      className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-card/90 backdrop-blur-sm border-0 hover-glow overflow-hidden animate-fade-in"
       style={{ animationDelay: `${delay}ms` }}
     >
       <CardContent className="p-8">
@@ -22,11 +22,11 @@ export function ServiceCard({ title, description, icon: Icon, features, delay = 
             <Icon className="w-8 h-8 text-white" />
           </div>
           
-          <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-gradient transition-all duration-300">
+          <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-gradient transition-all duration-300">
             {title}
           </h3>
           
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-muted-foreground mb-6 leading-relaxed">
             {description}
           </p>
           
@@ -34,7 +34,7 @@ export function ServiceCard({ title, description, icon: Icon, features, delay = 
             {features.map((feature, index) => (
               <li 
                 key={index} 
-                className="flex items-center text-sm text-gray-700 transform translate-x-0 group-hover:translate-x-2 transition-transform duration-300"
+                className="flex items-center text-sm text-muted-foreground transform translate-x-0 group-hover:translate-x-2 transition-transform duration-300"
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="w-2 h-2 bg-gradient-canz rounded-full mr-3 flex-shrink-0"></div>

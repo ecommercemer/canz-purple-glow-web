@@ -7,83 +7,83 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 230 230 230; /* Light gray #e6e6e6 */
+    --foreground: 308 85% 15%; /* Dark purple #8a0d71 */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 308 85% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 308 85% 15%;
 
-    --primary: 316 73% 52%;
+    --primary: 327 65% 49%; /* Pink #bf2885 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 40% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 230 230 230; /* Light gray */
+    --secondary-foreground: 308 85% 15%;
 
-    --muted: 270 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 202 100% 28%; /* Dark blue #005b90 */
 
-    --accent: 316 73% 52%;
+    --accent: 195 76% 45%; /* Light blue #1e8dc5 */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 316 73% 52%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 327 65% 49%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 316 73% 52%;
+    --sidebar-foreground: 308 85% 15%;
+    --sidebar-primary: 327 65% 49%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 270 40% 96%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 316 73% 52%;
+    --sidebar-accent: 230 230 230;
+    --sidebar-accent-foreground: 308 85% 15%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 327 65% 49%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 308 85% 15%; /* Dark purple */
+    --foreground: 230 230 230;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 308 85% 15%;
+    --card-foreground: 230 230 230;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 308 85% 15%;
+    --popover-foreground: 230 230 230;
 
-    --primary: 316 73% 52%;
+    --primary: 327 65% 49%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 202 100% 28%; /* Dark blue */
+    --secondary-foreground: 230 230 230;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 202 100% 28%;
+    --muted-foreground: 195 76% 45%;
 
-    --accent: 316 73% 52%;
+    --accent: 195 76% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 316 73% 52%;
+    --border: 202 100% 28%;
+    --input: 202 100% 28%;
+    --ring: 327 65% 49%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 316 73% 52%;
+    --sidebar-background: 202 100% 28%;
+    --sidebar-foreground: 230 230 230;
+    --sidebar-primary: 327 65% 49%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 316 73% 52%;
+    --sidebar-accent: 308 85% 15%;
+    --sidebar-accent-foreground: 230 230 230;
+    --sidebar-border: 308 85% 15%;
+    --sidebar-ring: 327 65% 49%;
   }
 }
 
@@ -101,32 +101,44 @@
     scroll-behavior: smooth;
   }
 
-  /* Custom gradient backgrounds */
+  /* Custom gradient backgrounds using your color palette */
   .bg-gradient-canz {
-    background: linear-gradient(135deg, #EC4899 0%, #D946EF 50%, #8B5CF6 100%);
+    background: linear-gradient(135deg, #8a0d71 0%, #bf2885 50%, #1e8dc5 100%);
   }
 
   .bg-gradient-canz-light {
-    background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(217, 70, 239, 0.1) 50%, rgba(139, 92, 246, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(138, 13, 113, 0.1) 0%, rgba(191, 40, 133, 0.1) 50%, rgba(30, 141, 197, 0.1) 100%);
   }
 
   .bg-gradient-hero {
-    background: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(217, 70, 239, 0.05) 50%, rgba(139, 92, 246, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(138, 13, 113, 0.05) 0%, rgba(191, 40, 133, 0.05) 50%, rgba(30, 141, 197, 0.05) 100%);
   }
 
   .bg-gradient-secondary {
-    background: linear-gradient(135deg, rgba(236, 72, 153, 0.03) 0%, rgba(217, 70, 239, 0.03) 50%, rgba(139, 92, 246, 0.03) 100%);
+    background: linear-gradient(135deg, rgba(0, 91, 144, 0.1) 0%, rgba(2, 117, 174, 0.1) 50%, rgba(30, 141, 197, 0.1) 100%);
+  }
+
+  .bg-gradient-monochrome {
+    background: linear-gradient(135deg, #8a0d71 0%, #bf2885 100%);
   }
 
   /* Hover effects */
   .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(217, 70, 239, 0.4);
+    box-shadow: 0 0 30px rgba(191, 40, 133, 0.4);
     transition: all 0.3s ease;
   }
 
-  /* Text gradient */
+  /* Text gradient using your colors */
   .text-gradient {
-    background: linear-gradient(135deg, #EC4899 0%, #D946EF 50%, #8B5CF6 100%);
+    background: linear-gradient(135deg, #8a0d71 0%, #bf2885 50%, #1e8dc5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Monochromatic text gradient */
+  .text-gradient-mono {
+    background: linear-gradient(135deg, #8a0d71 0%, #bf2885 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
