@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import {
   Dialog,
@@ -59,7 +58,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-gradient">
+          <DialogTitle className="text-2xl font-bold text-dark-purple">
             {mode === 'login' ? 'Login to' : 'Sign up to'} canz
           </DialogTitle>
           <DialogDescription>
@@ -110,7 +109,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
               </div>
               <Button 
                 type="submit" 
-                className="w-full bg-gradient-canz hover:shadow-2xl hover:shadow-primary/25 transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-primary hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 Login
               </Button>
@@ -173,7 +172,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
               />
               <Button 
                 type="submit" 
-                className="w-full bg-gradient-canz hover:shadow-2xl hover:shadow-primary/25 transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-primary hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 Sign Up
               </Button>

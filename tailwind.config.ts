@@ -63,21 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom color palette based on your specifications
-				brand: {
-					'purple-dark': '#8a0d71',    // Dark purple
-					'blue-dark': '#005b90',      // Dark blue
-					'gray-light': '#e6e6e6',     // Light gray
-					'pink': '#bf2885',           // Pink
-					'blue-medium': '#0275ae',    // Medium blue
-					'blue-light': '#1e8dc5'      // Light blue
-				}
-			},
-			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, #8a0d71 0%, #bf2885 50%, #1e8dc5 100%)',
-				'gradient-secondary': 'linear-gradient(135deg, #005b90 0%, #0275ae 50%, #1e8dc5 100%)',
-				'gradient-hero': 'linear-gradient(135deg, rgba(138, 13, 113, 0.1) 0%, rgba(191, 40, 133, 0.1) 50%, rgba(30, 141, 197, 0.1) 100%)',
-				'gradient-monochrome': 'linear-gradient(135deg, #8a0d71 0%, #bf2885 100%)',
+				// Custom single color palette
+				'dark-purple': '#8a0d71',
+				'dark-blue': '#005b90', 
+				'light-gray': '#e6e6e6',
+				'medium-gray': '#c3c4c6',
+				'pink': '#bf2885',
+				'light-blue': '#1e8dc5'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -126,14 +118,6 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
-				},
-				'glow': {
-					'0%, 100%': {
-						boxShadow: '0 0 20px rgba(138, 13, 113, 0.3)'
-					},
-					'50%': {
-						boxShadow: '0 0 30px rgba(191, 40, 133, 0.5)'
-					}
 				}
 			},
 			animation: {
@@ -141,8 +125,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in': 'slide-in 0.5s ease-out',
-				'float': 'float 3s ease-in-out infinite',
-				'glow': 'glow 2s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
