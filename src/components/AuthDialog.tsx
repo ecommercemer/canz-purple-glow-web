@@ -103,14 +103,14 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 <Button 
                   type="button" 
                   variant="link" 
-                  className="text-sm text-purple-600 hover:text-purple-800"
+                  className="text-sm text-primary hover:text-primary/80"
                 >
                   Forgot password?
                 </Button>
               </div>
               <Button 
                 type="submit" 
-                className="w-full bg-gradient-canz hover:shadow-2xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-gradient-canz hover:shadow-2xl hover:shadow-primary/25 transform hover:scale-105 transition-all duration-300"
               >
                 Login
               </Button>
@@ -173,7 +173,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
               />
               <Button 
                 type="submit" 
-                className="w-full bg-gradient-canz hover:shadow-2xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-gradient-canz hover:shadow-2xl hover:shadow-primary/25 transform hover:scale-105 transition-all duration-300"
               >
                 Sign Up
               </Button>

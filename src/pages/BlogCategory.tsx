@@ -99,7 +99,7 @@ const BlogCategory = () => {
             <h1 className="text-5xl font-bold mb-6">
               <span className="text-gradient">{categoryName}</span> Articles
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Explore our latest insights and expertise in {categoryName?.toLowerCase()}
             </p>
           </div>
@@ -110,7 +110,7 @@ const BlogCategory = () => {
               {posts.map((post, index) => (
                 <Link key={post.id} to={`/blog/${post.id}`}>
                   <Card 
-                    className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/90 backdrop-blur-sm border-0 hover-glow overflow-hidden animate-fade-in cursor-pointer"
+                    className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-card/90 backdrop-blur-sm border-0 hover-glow overflow-hidden animate-fade-in cursor-pointer"
                     style={{ animationDelay: `${index * 200}ms` }}
                   >
                     <div className="aspect-video overflow-hidden">
@@ -125,7 +125,7 @@ const BlogCategory = () => {
                         <Badge variant="secondary" className="bg-gradient-canz-light text-primary">
                           {categoryName}
                         </Badge>
-                        <div className="flex items-center text-sm text-gray-500">
+                        <div className="flex items-center text-sm text-muted-foreground">
                           <Clock className="w-4 h-4 mr-1" />
                           {post.readTime}
                         </div>
@@ -135,16 +135,16 @@ const BlogCategory = () => {
                         {post.title}
                       </h3>
                       
-                      <p className="text-gray-600 mb-4 line-clamp-3">
+                      <p className="text-muted-foreground mb-4 line-clamp-3">
                         {post.excerpt}
                       </p>
                       
                       <div className="flex items-center justify-between">
-                        <div className="flex items-center text-sm text-gray-500">
+                        <div className="flex items-center text-sm text-muted-foreground">
                           <Calendar className="w-4 h-4 mr-1" />
                           {post.date}
                         </div>
-                        <Button variant="ghost" size="sm" className="p-0 h-auto">
+                        <Button variant="ghost" size="sm" className="p-0 h-auto text-primary hover:text-primary/80">
                           Read More
                           <ArrowRight className="ml-1 w-4 h-4" />
                         </Button>
@@ -157,7 +157,7 @@ const BlogCategory = () => {
           ) : (
             <div className="text-center py-16">
               <h3 className="text-2xl font-bold mb-4">No posts found in this category</h3>
-              <p className="text-gray-600 mb-8">Check back later for new content in {categoryName?.toLowerCase()}.</p>
+              <p className="text-muted-foreground mb-8">Check back later for new content in {categoryName?.toLowerCase()}.</p>
               <Button asChild>
                 <Link to="/blog">
                   <ArrowLeft className="w-4 h-4 mr-2" />
