@@ -34,7 +34,7 @@ export function LoginDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" className="border-2 border-purple-400 hover:bg-gradient-secondary transition-all duration-300">
+        <Button variant="outline" className="border-2 border-primary hover:bg-gradient-secondary transition-all duration-300">
           <LogIn className="w-4 h-4 mr-2" />
           Login
         </Button>
@@ -78,14 +78,14 @@ export function LoginDialog() {
               <Button 
                 type="button" 
                 variant="link" 
-                className="text-sm text-purple-600 hover:text-purple-800"
+                className="text-sm text-primary hover:text-primary/80"
               >
                 Forgot password?
               </Button>
             </div>
             <Button 
               type="submit" 
-              className="w-full bg-gradient-canz hover:shadow-2xl hover:shadow-purple-500/25 transform hover:scale-105 transition-all duration-300"
+              className="w-full bg-gradient-canz hover:shadow-2xl hover:shadow-primary/25 transform hover:scale-105 transition-all duration-300"
             >
               Login
             </Button>
