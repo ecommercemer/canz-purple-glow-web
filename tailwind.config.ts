@@ -64,12 +64,19 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Custom single color palette
-				'dark-purple': '#8a0d71',
-				'dark-blue': '#005b90', 
 				'light-gray': '#e6e6e6',
 				'medium-gray': '#c3c4c6',
+				'light-blue': '#1e8dc5',
+				'dark-purple': '#8a0d71',
 				'pink': '#bf2885',
-				'light-blue': '#1e8dc5'
+				'dark-blue': '#005b90'
+			},
+			backgroundImage: {
+				'gradient-primary': 'linear-gradient(135deg, #e6e6e6 0%, #c3c4c6 25%, #1e8dc5 50%, #8a0d71 75%, #bf2885 100%)',
+				'gradient-cool': 'linear-gradient(135deg, #e6e6e6 0%, #1e8dc5 50%, #005b90 100%)',
+				'gradient-warm': 'linear-gradient(135deg, #8a0d71 0%, #bf2885 100%)',
+				'gradient-monochrome': 'linear-gradient(135deg, #e6e6e6 0%, #c3c4c6 50%, #005b90 100%)',
+				'gradient-full': 'linear-gradient(45deg, #e6e6e6, #c3c4c6, #1e8dc5, #8a0d71, #bf2885, #005b90)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -118,6 +125,17 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
+				},
+				'gradient-shift': {
+					'0%': {
+						backgroundPosition: '0% 50%'
+					},
+					'50%': {
+						backgroundPosition: '100% 50%'
+					},
+					'100%': {
+						backgroundPosition: '0% 50%'
+					}
 				}
 			},
 			animation: {
@@ -125,7 +143,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in': 'slide-in 0.5s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'gradient-shift': 'gradient-shift 8s ease infinite'
 			}
 		}
 	},

@@ -79,13 +79,13 @@ const Index = () => {
       <HeroSection />
       
       {/* Services Overview */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-gradient-monochrome">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-6">
-              <span className="text-dark-purple">Our Services</span>
+              <span className="text-gradient">Our Services</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-light-gray max-w-3xl mx-auto leading-relaxed">
               Comprehensive solutions across five innovative business areas, 
               each designed to drive your success in the digital economy.
             </p>
@@ -105,7 +105,7 @@ const Index = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-primary hover:shadow-2xl transform hover:scale-105 transition-all duration-300 px-8 py-4"
+              className="bg-gradient-warm text-light-gray hover:shadow-2xl transform hover:scale-105 transition-all duration-300 px-8 py-4"
             >
               <Link to="/services/adtech">
                 Explore All Services
@@ -117,14 +117,14 @@ const Index = () => {
       </section>
       
       {/* Why Choose Us */}
-      <section className="py-24 px-6 bg-secondary">
+      <section className="py-24 px-6 bg-gradient-primary">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
               <h2 className="text-4xl font-bold mb-8">
-                Why Choose <span className="text-dark-purple">canz</span>?
+                Why Choose <span className="text-gradient">canz</span>?
               </h2>
-              <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+              <p className="text-xl text-light-gray mb-12 leading-relaxed">
                 We combine innovation with execution, delivering cutting-edge solutions 
                 that transform businesses and drive sustainable growth.
               </p>
@@ -142,8 +142,8 @@ const Index = () => {
                     className="flex items-center space-x-4 animate-fade-in"
                     style={{ animationDelay: `${index * 200}ms` }}
                   >
-                    <CheckCircle className="w-6 h-6 text-accent flex-shrink-0" />
-                    <span className="text-muted-foreground text-lg">{item}</span>
+                    <CheckCircle className="w-6 h-6 text-light-blue flex-shrink-0" />
+                    <span className="text-light-gray text-lg">{item}</span>
                   </div>
                 ))}
               </div>
@@ -152,7 +152,7 @@ const Index = () => {
                 <Button 
                   asChild 
                   size="lg"
-                  className="bg-primary hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                  className="bg-gradient-warm text-light-gray hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
                   <Link to="/about">
                     Learn More About Us
@@ -163,17 +163,17 @@ const Index = () => {
             </div>
             
             <div className="relative animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <div className="aspect-square bg-primary rounded-3xl p-8 relative overflow-hidden">
-                <div className="absolute inset-0 bg-white/10 rounded-3xl"></div>
+              <div className="aspect-square bg-gradient-cool rounded-3xl p-8 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-warm opacity-20 rounded-3xl"></div>
                 <div className="relative z-10 h-full flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="text-6xl font-bold mb-4">50+</div>
+                  <div className="text-center text-light-gray">
+                    <div className="text-6xl font-bold mb-4 text-gradient">50+</div>
                     <div className="text-xl">Successful Projects</div>
                     <div className="text-sm opacity-80 mt-2">Across all business areas</div>
                   </div>
                 </div>
-                <div className="absolute -top-12 -right-12 w-32 h-32 bg-white/10 rounded-full"></div>
-                <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-white/10 rounded-full"></div>
+                <div className="absolute -top-12 -right-12 w-32 h-32 bg-light-gray/10 rounded-full"></div>
+                <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-light-gray/10 rounded-full"></div>
               </div>
             </div>
           </div>
@@ -181,13 +181,13 @@ const Index = () => {
       </section>
       
       {/* Contact CTA */}
-      <section className="py-24 px-6">
+      <section className="py-24 px-6 bg-gradient-cool">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <h2 className="text-4xl font-bold mb-8">
-              Ready to Transform Your <span className="text-dark-purple">Business</span>?
+              Ready to Transform Your <span className="text-gradient">Business</span>?
             </h2>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+            <p className="text-xl text-light-gray mb-12 leading-relaxed">
               Let's discuss how canz can help you achieve your goals with our innovative solutions 
               and expert team. Get in touch today for a free consultation.
             </p>
@@ -196,7 +196,7 @@ const Index = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-primary hover:shadow-2xl transform hover:scale-105 transition-all duration-300 px-8 py-4"
+                className="bg-gradient-warm text-light-gray hover:shadow-2xl transform hover:scale-105 transition-all duration-300 px-8 py-4"
               >
                 <Link to="/contact">
                   Get Started Today
@@ -208,7 +208,7 @@ const Index = () => {
                 asChild 
                 variant="outline" 
                 size="lg"
-                className="border-2 border-muted hover:border-primary hover:bg-secondary transition-all duration-300 px-8 py-4"
+                className="border-2 border-light-gray hover:bg-gradient-monochrome hover:text-light-gray transition-all duration-300 px-8 py-4 text-light-gray"
               >
                 <a href="https://wa.me/989121941736" target="_blank" rel="noopener noreferrer">
                   WhatsApp Chat

@@ -56,12 +56,12 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
       <DialogTrigger asChild>
         {trigger}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] bg-gradient-monochrome border-0">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-dark-purple">
+          <DialogTitle className="text-2xl font-bold text-gradient">
             {mode === 'login' ? 'Login to' : 'Sign up to'} canz
           </DialogTitle>
-          <DialogDescription>
+          <DialogDescription className="text-light-gray">
             {mode === 'login' 
               ? 'Enter your email and password to access your account.'
               : 'Create a new account to get started with canz.'
@@ -77,9 +77,9 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="text-light-gray">Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter your email" type="email" {...field} />
+                      <Input placeholder="Enter your email" type="email" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -90,9 +90,9 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Password</FormLabel>
+                    <FormLabel className="text-light-gray">Password</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter your password" type="password" {...field} />
+                      <Input placeholder="Enter your password" type="password" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -102,14 +102,14 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 <Button 
                   type="button" 
                   variant="link" 
-                  className="text-sm text-primary hover:text-primary/80"
+                  className="text-sm text-light-blue hover:text-light-blue/80"
                 >
                   Forgot password?
                 </Button>
               </div>
               <Button 
                 type="submit" 
-                className="w-full bg-primary hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-gradient-warm text-light-gray hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 Login
               </Button>
@@ -123,9 +123,9 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="fullName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Full Name</FormLabel>
+                    <FormLabel className="text-light-gray">Full Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter your full name" {...field} />
+                      <Input placeholder="Enter your full name" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -136,9 +136,9 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="text-light-gray">Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="Enter your email" type="email" {...field} />
+                      <Input placeholder="Enter your email" type="email" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -149,9 +149,9 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Password</FormLabel>
+                    <FormLabel className="text-light-gray">Password</FormLabel>
                     <FormControl>
-                      <Input placeholder="Create a password" type="password" {...field} />
+                      <Input placeholder="Create a password" type="password" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -162,9 +162,9 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="confirmPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Confirm Password</FormLabel>
+                    <FormLabel className="text-light-gray">Confirm Password</FormLabel>
                     <FormControl>
-                      <Input placeholder="Confirm your password" type="password" {...field} />
+                      <Input placeholder="Confirm your password" type="password" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -172,7 +172,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
               />
               <Button 
                 type="submit" 
-                className="w-full bg-primary hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-gradient-warm text-light-gray hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 Sign Up
               </Button>
