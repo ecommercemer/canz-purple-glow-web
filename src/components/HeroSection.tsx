@@ -15,21 +15,21 @@ export function HeroSection() {
         <div className="animate-fade-in">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-monochrome backdrop-blur-sm border border-primary/20 mb-8">
-            <Sparkles className="w-4 h-4 mr-2 text-light-gray" />
-            <span className="text-sm font-medium text-light-gray">Innovation Hub for Tomorrow</span>
+            <Sparkles className="w-4 h-4 mr-2 text-light-on-dark" />
+            <span className="text-sm font-medium text-light-on-dark">Innovation Hub for Tomorrow</span>
           </div>
           
           {/* Main Heading */}
           <h1 className="text-6xl lg:text-8xl font-bold mb-8 leading-tight">
             <span className="text-gradient">canz</span>
             <br />
-            <span className="text-light-gray">transforms ideas</span>
+            <span className="text-dark-blue">transforms ideas</span>
             <br />
             <span className="text-gradient-light text-4xl lg:text-5xl">into reality</span>
           </h1>
           
           {/* Subtitle */}
-          <p className="text-xl lg:text-2xl text-light-gray mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl lg:text-2xl text-dark-blue mb-12 max-w-4xl mx-auto leading-relaxed">
             From cutting-edge adtech and fintech solutions to innovative digital products and marketing strategies, 
             we're your partner in building the future of technology.
           </p>
@@ -51,7 +51,7 @@ export function HeroSection() {
               asChild 
               variant="outline" 
               size="lg"
-              className="border-2 border-light-gray hover:bg-gradient-cool hover:text-light-gray transition-all duration-300 px-8 py-4 text-lg text-light-gray"
+              className="border-2 border-dark-blue hover:bg-gradient-cool hover:text-light-on-dark transition-all duration-300 px-8 py-4 text-lg text-dark-blue"
             >
               <Link to="/about">
                 Learn About Us
@@ -63,15 +63,15 @@ export function HeroSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center group">
               <div className="text-4xl font-bold text-gradient mb-2 group-hover:scale-110 transition-transform duration-300">50+</div>
-              <div className="text-light-gray">Projects Delivered</div>
+              <div className="text-dark-blue">Projects Delivered</div>
             </div>
             <div className="text-center group">
               <div className="text-4xl font-bold text-gradient mb-2 group-hover:scale-110 transition-transform duration-300">5</div>
-              <div className="text-light-gray">Business Areas</div>
+              <div className="text-dark-blue">Business Areas</div>
             </div>
             <div className="text-center group">
               <div className="text-4xl font-bold text-gradient mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
-              <div className="text-light-gray">Support Available</div>
+              <div className="text-dark-blue">Support Available</div>
             </div>
           </div>
         </div>

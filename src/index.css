@@ -126,13 +126,13 @@
     background-color: #005b90;
   }
 
-  /* Text colors */
+  /* Text colors - using dark colors for better readability */
   .text-light-gray {
-    color: #e6e6e6;
+    color: #005b90; /* Dark blue for readability */
   }
 
   .text-medium-gray {
-    color: #c3c4c6;
+    color: #8a0d71; /* Dark purple for readability */
   }
 
   .text-light-blue {
@@ -149,6 +149,15 @@
 
   .text-dark-blue {
     color: #005b90;
+  }
+
+  /* Light text colors for dark backgrounds */
+  .text-light-on-dark {
+    color: #e6e6e6;
+  }
+
+  .text-medium-on-dark {
+    color: #c3c4c6;
   }
 
   /* Light gradient backgrounds for page sections */

@@ -61,7 +61,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
           <DialogTitle className="text-2xl font-bold text-gradient">
             {mode === 'login' ? 'Login to' : 'Sign up to'} canz
           </DialogTitle>
-          <DialogDescription className="text-light-gray">
+          <DialogDescription className="text-dark-blue">
             {mode === 'login' 
               ? 'Enter your email and password to access your account.'
               : 'Create a new account to get started with canz.'
@@ -77,7 +77,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-light-gray">Email</FormLabel>
+                    <FormLabel className="text-dark-blue">Email</FormLabel>
                     <FormControl>
                       <Input placeholder="Enter your email" type="email" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
@@ -90,7 +90,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-light-gray">Password</FormLabel>
+                    <FormLabel className="text-dark-blue">Password</FormLabel>
                     <FormControl>
                       <Input placeholder="Enter your password" type="password" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
@@ -123,7 +123,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="fullName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-light-gray">Full Name</FormLabel>
+                    <FormLabel className="text-dark-blue">Full Name</FormLabel>
                     <FormControl>
                       <Input placeholder="Enter your full name" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
@@ -136,7 +136,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-light-gray">Email</FormLabel>
+                    <FormLabel className="text-dark-blue">Email</FormLabel>
                     <FormControl>
                       <Input placeholder="Enter your email" type="email" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
@@ -149,7 +149,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="password"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-light-gray">Password</FormLabel>
+                    <FormLabel className="text-dark-blue">Password</FormLabel>
                     <FormControl>
                       <Input placeholder="Create a password" type="password" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
@@ -162,7 +162,7 @@ export function AuthDialog({ mode, trigger }: AuthDialogProps) {
                 name="confirmPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-light-gray">Confirm Password</FormLabel>
+                    <FormLabel className="text-dark-blue">Confirm Password</FormLabel>
                     <FormControl>
                       <Input placeholder="Confirm your password" type="password" {...field} className="bg-light-gray/20 border-light-gray text-dark-purple placeholder:text-medium-gray" />
                     </FormControl>
