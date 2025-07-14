@@ -59,7 +59,7 @@ const Adtech = () => {
             <h1 className="text-6xl font-bold mb-8">
               <span className="text-gradient">Adtech</span> Solutions
             </h1>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-readable max-w-4xl mx-auto leading-relaxed">
               Revolutionary IOT and AR/VR-based advertising solutions with smart digital signage technology 
               that transforms how brands connect with their audiences.
             </p>
@@ -68,7 +68,7 @@ const Adtech = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
               <h2 className="text-4xl font-bold mb-8">Next-Generation Advertising</h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-readable mb-8 leading-relaxed">
                 Our adtech solutions combine cutting-edge IOT technology with immersive AR/VR experiences 
                 to create advertising campaigns that not only capture attention but drive meaningful engagement 
                 and measurable results.
@@ -78,7 +78,7 @@ const Adtech = () => {
                 {benefits.slice(0, 3).map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">{benefit}</span>
+                    <span className="text-readable-secondary">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -112,13 +112,13 @@ const Adtech = () => {
       </section>
       
       {/* Features Section */}
-      <section className="py-24 px-6 bg-gradient-secondary">
+      <section className="py-24 px-6 bg-gradient-light">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-6">
               Our <span className="text-gradient">Features</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-readable max-w-3xl mx-auto leading-relaxed">
               Comprehensive adtech solutions designed to maximize your advertising ROI and audience engagement.
             </p>
           </div>
@@ -137,7 +137,7 @@ const Adtech = () => {
                   <h3 className="text-2xl font-bold mb-4 group-hover:text-gradient transition-colors duration-300">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-readable leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -154,7 +154,7 @@ const Adtech = () => {
             <h2 className="text-4xl font-bold mb-8">
               Ready to Transform Your <span className="text-gradient">Advertising</span>?
             </h2>
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+            <p className="text-xl text-readable mb-12 leading-relaxed">
               Let's discuss how our adtech solutions can revolutionize your marketing campaigns 
               and drive unprecedented engagement with your target audience.
             </p>

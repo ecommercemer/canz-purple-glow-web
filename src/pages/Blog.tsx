@@ -96,7 +96,7 @@ const Blog = () => {
             <h1 className="text-6xl font-bold mb-8">
               <span className="text-gradient">canz</span> Blog
             </h1>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-readable max-w-4xl mx-auto leading-relaxed">
               Insights, trends, and expert perspectives on fintech, technology, marketing, 
               investment, and innovation from the canz team.
             </p>
@@ -179,7 +179,7 @@ const Blog = () => {
       </section>
       
       {/* Recent Posts */}
-      <section className="py-16 px-6 bg-gradient-secondary">
+      <section className="py-16 px-6 bg-gradient-light">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
             <div className="lg:col-span-2">
@@ -242,7 +242,7 @@ const Blog = () => {
               <Card className="bg-white/90 backdrop-blur-sm border-0">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-6">Subscribe to Our Newsletter</h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-readable mb-6">
                     Get the latest insights and updates delivered directly to your inbox.
                   </p>
                   <div className="space-y-4">
@@ -288,7 +288,7 @@ const Blog = () => {
             <h2 className="text-4xl font-bold mb-8">
               Want to Contribute or Learn More?
             </h2>
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+            <p className="text-xl text-readable mb-12 leading-relaxed">
               Join our community of innovators and thought leaders. Share your insights or get expert advice on your next project.
             </p>
             

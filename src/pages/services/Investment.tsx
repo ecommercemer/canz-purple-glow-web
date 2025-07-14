@@ -59,7 +59,7 @@ const Investment = () => {
             <h1 className="text-6xl font-bold mb-8">
               <span className="text-gradient">Investment</span> Solutions
             </h1>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-readable max-w-4xl mx-auto leading-relaxed">
               Strategic angel investments, equity-based venture capital, and comprehensive startup evaluation 
               services that drive innovation and sustainable growth.
             </p>
@@ -68,7 +68,7 @@ const Investment = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
               <h2 className="text-4xl font-bold mb-8">Smart Investment Strategies</h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-readable mb-8 leading-relaxed">
                 Our investment team combines deep market expertise with innovative evaluation methodologies 
                 to identify and nurture high-potential investment opportunities across diverse sectors.
               </p>
@@ -77,7 +77,7 @@ const Investment = () => {
                 {benefits.slice(0, 3).map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">{benefit}</span>
+                    <span className="text-readable-secondary">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -111,13 +111,13 @@ const Investment = () => {
       </section>
       
       {/* Features Section */}
-      <section className="py-24 px-6 bg-gradient-secondary">
+      <section className="py-24 px-6 bg-gradient-light">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-6">
               Investment <span className="text-gradient">Services</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-readable max-w-3xl mx-auto leading-relaxed">
               Comprehensive investment solutions for entrepreneurs and growing businesses.
             </p>
           </div>
@@ -136,7 +136,7 @@ const Investment = () => {
                   <h3 className="text-2xl font-bold mb-4 group-hover:text-gradient transition-colors duration-300">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-readable leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -153,7 +153,7 @@ const Investment = () => {
             <h2 className="text-4xl font-bold mb-8">
               Ready to <span className="text-gradient">Invest in Growth</span>?
             </h2>
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+            <p className="text-xl text-readable mb-12 leading-relaxed">
               Partner with us to unlock investment opportunities and accelerate your business growth.
             </p>
             

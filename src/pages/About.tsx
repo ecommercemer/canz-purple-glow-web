@@ -70,7 +70,7 @@ const About = () => {
             <h1 className="text-6xl font-bold mb-8">
               About <span className="text-gradient">canz</span>
             </h1>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-readable max-w-4xl mx-auto leading-relaxed">
               We are a forward-thinking innovation hub that transforms ideas into reality 
               through cutting-edge technology and strategic expertise.
             </p>
@@ -79,7 +79,7 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
               <h2 className="text-4xl font-bold mb-8">Our Story</h2>
-              <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+              <div className="space-y-6 text-lg text-readable leading-relaxed">
                 <p>
                   Founded with a vision to bridge the gap between innovative technology and practical business solutions, 
                   canz has evolved into a comprehensive innovation hub serving diverse industries.
@@ -111,14 +111,14 @@ const About = () => {
       </section>
       
       {/* Mission & Vision */}
-      <section className="py-24 px-6 bg-gradient-secondary">
+      <section className="py-24 px-6 bg-gradient-light">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <Card className="bg-white/90 backdrop-blur-sm border-0 hover-glow transition-all duration-300 animate-fade-in">
               <CardContent className="p-12">
                 <Target className="w-16 h-16 text-primary mb-8" />
                 <h3 className="text-3xl font-bold mb-6">Our Mission</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-readable leading-relaxed">
                   To empower businesses and individuals with innovative technology solutions that drive growth, 
                   efficiency, and sustainable success in an ever-evolving digital landscape.
                 </p>
@@ -129,7 +129,7 @@ const About = () => {
               <CardContent className="p-12">
                 <Heart className="w-16 h-16 text-primary mb-8" />
                 <h3 className="text-3xl font-bold mb-6">Our Vision</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-readable leading-relaxed">
                   To be the leading innovation hub that shapes the future of technology, creating meaningful 
                   impact across industries through pioneering solutions and strategic partnerships.
                 </p>
@@ -146,7 +146,7 @@ const About = () => {
             <h2 className="text-5xl font-bold mb-6">
               Our <span className="text-gradient">Values</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-readable max-w-3xl mx-auto leading-relaxed">
               The principles that guide our work and define our commitment to excellence.
             </p>
           </div>
@@ -165,7 +165,7 @@ const About = () => {
                   <h3 className="text-xl font-bold mb-4 group-hover:text-gradient transition-colors duration-300">
                     {value.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-readable leading-relaxed">
                     {value.description}
                   </p>
                 </CardContent>
@@ -176,13 +176,13 @@ const About = () => {
       </section>
       
       {/* Team */}
-      <section className="py-24 px-6 bg-gradient-secondary">
+      <section className="py-24 px-6 bg-gradient-light-blue">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-6">
               Our <span className="text-gradient">Team</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-readable max-w-3xl mx-auto leading-relaxed">
               Passionate professionals dedicated to delivering exceptional results across all our business areas.
             </p>
           </div>
@@ -199,7 +199,7 @@ const About = () => {
                     {member.name}
                   </h3>
                   <p className="text-primary font-semibold mb-4">{member.role}</p>
-                  <p className="text-gray-600 leading-relaxed">{member.description}</p>
+                  <p className="text-readable leading-relaxed">{member.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -214,7 +214,7 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-8">
               Ready to Work with <span className="text-gradient">Us</span>?
             </h2>
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+            <p className="text-xl text-readable mb-12 leading-relaxed">
               Join the growing number of businesses that trust canz to drive their digital transformation 
               and accelerate their growth journey.
             </p>

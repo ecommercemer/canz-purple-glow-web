@@ -46,7 +46,7 @@ const Contact = () => {
             <h1 className="text-6xl font-bold mb-8">
               Get in <span className="text-gradient">Touch</span>
             </h1>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-readable max-w-4xl mx-auto leading-relaxed">
               Ready to transform your business? Let's discuss how canz can help you achieve 
               your goals with our innovative solutions.
             </p>
@@ -63,7 +63,7 @@ const Contact = () => {
                   <h3 className="text-2xl font-bold mb-4 group-hover:text-gradient transition-colors duration-300">
                     Email Us
                   </h3>
-                  <p className="text-gray-600 mb-4">Send us a message anytime</p>
+                  <p className="text-readable mb-4">Send us a message anytime</p>
                   <a 
                     href="mailto:Amir.Mirmehrkar.de@gmail.com"
                     className="text-primary hover:text-gradient transition-colors duration-300 font-semibold"
@@ -81,7 +81,7 @@ const Contact = () => {
                   <h3 className="text-2xl font-bold mb-4 group-hover:text-gradient transition-colors duration-300">
                     Call or Message
                   </h3>
-                  <p className="text-gray-600 mb-4">WhatsApp & Telegram available</p>
+                  <p className="text-readable mb-4">WhatsApp & Telegram available</p>
                   <p className="text-primary font-semibold">+98 912 194 1736</p>
                   <div className="flex gap-4 mt-4">
                     <Button 
@@ -114,7 +114,7 @@ const Contact = () => {
                   <h3 className="text-2xl font-bold mb-4 group-hover:text-gradient transition-colors duration-300">
                     Location
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-readable">
                     Global operations with<br />
                     international reach
                   </p>
@@ -131,7 +131,7 @@ const Contact = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                        <label htmlFor="name" className="block text-sm font-semibold text-readable-secondary mb-2">
                           Full Name
                         </label>
                         <Input
@@ -147,7 +147,7 @@ const Contact = () => {
                       </div>
                       
                       <div>
-                        <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                        <label htmlFor="email" className="block text-sm font-semibold text-readable-secondary mb-2">
                           Email Address
                         </label>
                         <Input
@@ -164,7 +164,7 @@ const Contact = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label htmlFor="subject" className="block text-sm font-semibold text-readable-secondary mb-2">
                         Subject
                       </label>
                       <Input
@@ -180,7 +180,7 @@ const Contact = () => {
                     </div>
                     
                     <div>
-                      <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                      <label htmlFor="message" className="block text-sm font-semibold text-readable-secondary mb-2">
                         Message
                       </label>
                       <textarea
@@ -212,14 +212,14 @@ const Contact = () => {
       </section>
       
       {/* Live Chat Section */}
-      <section className="py-16 px-6 bg-gradient-secondary">
+      <section className="py-16 px-6 bg-gradient-subtle">
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in">
             <MessageCircle className="w-16 h-16 text-primary mx-auto mb-6" />
             <h2 className="text-3xl font-bold mb-6">
               Need <span className="text-gradient">Immediate</span> Assistance?
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-readable mb-8 leading-relaxed">
               Connect with us instantly through WhatsApp or Telegram for quick responses.
             </p>
             

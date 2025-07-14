@@ -8,28 +8,28 @@
 @layer base {
   :root {
     --background: 210 4% 91%; /* Light gray #e6e6e6 */
-    --foreground: 308 85% 22%; /* Dark purple #8a0d71 */
+    --foreground: 202 100% 28%; /* Dark blue #005b90 - dark text for readability */
 
     --card: 0 0% 100%;
-    --card-foreground: 308 85% 22%;
+    --card-foreground: 202 100% 28%; /* Dark blue for readable text */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 308 85% 22%;
+    --popover-foreground: 202 100% 28%; /* Dark blue for readable text */
 
     --primary: 327 65% 49%; /* Pink #bf2885 */
-    --primary-foreground: 210 4% 91%;
+    --primary-foreground: 0 0% 100%; /* White text on primary */
 
     --secondary: 220 8% 76%; /* Medium gray #c3c4c6 */
-    --secondary-foreground: 308 85% 22%;
+    --secondary-foreground: 202 100% 28%; /* Dark blue for readable text */
 
     --muted: 220 8% 76%; /* Medium gray #c3c4c6 */
     --muted-foreground: 202 100% 28%; /* Dark blue #005b90 */
 
     --accent: 195 76% 45%; /* Light blue #1e8dc5 */
-    --accent-foreground: 210 4% 91%;
+    --accent-foreground: 0 0% 100%; /* White text on accent */
 
     --destructive: 327 65% 49%; /* Using pink instead of red */
-    --destructive-foreground: 210 4% 91%;
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
 
     --border: 220 8% 76%;
     --input: 220 8% 76%;
@@ -49,28 +49,28 @@
 
   .dark {
     --background: 308 85% 22%; /* Dark purple */
-    --foreground: 210 4% 91%;
+    --foreground: 210 4% 91%; /* Light gray for readable text */
 
     --card: 308 85% 22%;
-    --card-foreground: 210 4% 91%;
+    --card-foreground: 210 4% 91%; /* Light gray for readable text */
 
     --popover: 308 85% 22%;
-    --popover-foreground: 210 4% 91%;
+    --popover-foreground: 210 4% 91%; /* Light gray for readable text */
 
     --primary: 327 65% 49%;
-    --primary-foreground: 210 4% 91%;
+    --primary-foreground: 0 0% 100%; /* White text on primary */
 
     --secondary: 202 100% 28%; /* Dark blue */
-    --secondary-foreground: 210 4% 91%;
+    --secondary-foreground: 210 4% 91%; /* Light gray for readable text */
 
     --muted: 202 100% 28%;
     --muted-foreground: 195 76% 45%;
 
     --accent: 195 76% 45%;
-    --accent-foreground: 210 4% 91%;
+    --accent-foreground: 0 0% 100%; /* White text on accent */
 
     --destructive: 327 65% 49%;
-    --destructive-foreground: 210 4% 91%;
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
 
     --border: 202 100% 28%;
     --input: 202 100% 28%;
@@ -151,30 +151,33 @@
     color: #005b90;
   }
 
-  /* Gradient backgrounds */
+  /* Light gradient backgrounds for page sections */
+  .bg-gradient-light {
+    background: linear-gradient(135deg, #e6e6e6 0%, #c3c4c6 30%, #e6e6e6 100%);
+  }
+
+  .bg-gradient-light-blue {
+    background: linear-gradient(135deg, #e6e6e6 0%, rgba(30, 141, 197, 0.1) 50%, #e6e6e6 100%);
+  }
+
+  .bg-gradient-subtle {
+    background: linear-gradient(180deg, #e6e6e6 0%, rgba(195, 196, 198, 0.3) 50%, #e6e6e6 100%);
+  }
+
+  /* Primary gradient for buttons and accents */
   .bg-gradient-primary {
-    background: linear-gradient(135deg, #e6e6e6 0%, #c3c4c6 25%, #1e8dc5 50%, #8a0d71 75%, #bf2885 100%);
+    background: linear-gradient(135deg, #8a0d71 0%, #bf2885 50%, #1e8dc5 100%);
   }
 
-  .bg-gradient-cool {
-    background: linear-gradient(135deg, #e6e6e6 0%, #1e8dc5 50%, #005b90 100%);
+  .bg-gradient-canz {
+    background: linear-gradient(135deg, #8a0d71 0%, #bf2885 50%, #1e8dc5 100%);
   }
 
-  .bg-gradient-warm {
-    background: linear-gradient(135deg, #8a0d71 0%, #bf2885 100%);
+  .bg-gradient-secondary {
+    background: linear-gradient(135deg, rgba(195, 196, 198, 0.2) 0%, rgba(230, 230, 230, 0.8) 100%);
   }
 
-  .bg-gradient-monochrome {
-    background: linear-gradient(135deg, #e6e6e6 0%, #c3c4c6 50%, #005b90 100%);
-  }
-
-  .bg-gradient-full {
-    background: linear-gradient(45deg, #e6e6e6, #c3c4c6, #1e8dc5, #8a0d71, #bf2885, #005b90);
-    background-size: 300% 300%;
-    animation: gradientShift 8s ease infinite;
-  }
-
-  /* Gradient text */
+  /* Gradient text - readable and vibrant */
   .text-gradient {
     background: linear-gradient(135deg, #8a0d71 0%, #bf2885 50%, #1e8dc5 100%);
     -webkit-background-clip: text;
@@ -182,11 +185,20 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .text-gradient-light {
-    background: linear-gradient(135deg, #1e8dc5 0%, #e6e6e6 100%);
+  .text-gradient-title {
+    background: linear-gradient(135deg, #005b90 0%, #8a0d71 50%, #bf2885 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  /* Dark readable text classes */
+  .text-readable {
+    color: #005b90;
+  }
+
+  .text-readable-secondary {
+    color: #8a0d71;
   }
 
   /* Animation classes */

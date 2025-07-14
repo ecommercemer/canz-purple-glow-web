@@ -59,7 +59,7 @@ const Marketing = () => {
             <h1 className="text-6xl font-bold mb-8">
               <span className="text-gradient">Marketing</span> & Content Studio
             </h1>
-            <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-readable max-w-4xl mx-auto leading-relaxed">
               Creative motion graphics, AI-powered SEO optimization, and innovative guerrilla marketing 
               strategies that amplify your brand and drive meaningful engagement.
             </p>
@@ -68,7 +68,7 @@ const Marketing = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in">
               <h2 className="text-4xl font-bold mb-8">Creative Marketing Excellence</h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-readable mb-8 leading-relaxed">
                 Our marketing and content studio combines artistic creativity with data-driven strategies 
                 to create campaigns that not only look amazing but deliver exceptional results for your business.
               </p>
@@ -77,7 +77,7 @@ const Marketing = () => {
                 {benefits.slice(0, 3).map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
-                    <span className="text-gray-700">{benefit}</span>
+                    <span className="text-readable-secondary">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -111,13 +111,13 @@ const Marketing = () => {
       </section>
       
       {/* Features Section */}
-      <section className="py-24 px-6 bg-gradient-secondary">
+      <section className="py-24 px-6 bg-gradient-light-blue">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20 animate-fade-in">
             <h2 className="text-5xl font-bold mb-6">
               Marketing <span className="text-gradient">Services</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-readable max-w-3xl mx-auto leading-relaxed">
               Comprehensive marketing and content creation services for modern brands.
             </p>
           </div>
@@ -136,7 +136,7 @@ const Marketing = () => {
                   <h3 className="text-2xl font-bold mb-4 group-hover:text-gradient transition-colors duration-300">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-readable leading-relaxed">
                     {feature.description}
                   </p>
                 </CardContent>
@@ -153,7 +153,7 @@ const Marketing = () => {
             <h2 className="text-4xl font-bold mb-8">
               Ready to Amplify Your <span className="text-gradient">Brand</span>?
             </h2>
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+            <p className="text-xl text-readable mb-12 leading-relaxed">
               Let's create marketing campaigns that capture attention, engage audiences, and drive measurable results.
             </p>
             

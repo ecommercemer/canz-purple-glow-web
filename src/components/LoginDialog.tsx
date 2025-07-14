@@ -42,7 +42,7 @@ export function LoginDialog() {
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-gradient">Login to canz</DialogTitle>
-          <DialogDescription>
+          <DialogDescription className="text-readable">
             Enter your email and password to access your account.
           </DialogDescription>
         </DialogHeader>
@@ -53,7 +53,7 @@ export function LoginDialog() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel className="text-readable-secondary">Email</FormLabel>
                   <FormControl>
                     <Input placeholder="Enter your email" type="email" {...field} />
                   </FormControl>
@@ -66,7 +66,7 @@ export function LoginDialog() {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel className="text-readable-secondary">Password</FormLabel>
                   <FormControl>
                     <Input placeholder="Enter your password" type="password" {...field} />
                   </FormControl>
